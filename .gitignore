@@ -1,0 +1,4 @@
+.idea
+*.iml
+/target
+/main/java/pl/sda/algorithm/solutions/*

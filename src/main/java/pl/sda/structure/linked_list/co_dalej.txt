@@ -1,0 +1,22 @@
+### W klasie MySingleLinedList można rozwijać i dostosować do przechowywania obiektów (typy generyczne)
+
+W tym celu najlepiej wzorować się na implementacji klasy LinkedList.java z pakietu jav-y, czyli:
+
+public class MySingleLinedList<T> implement List<T>{
+    ...reszta implementacji
+}
+
+Czyli analogicznie jak w przypadku MyArrayList.java
+
+Dodatkowo zastanów się nad implementacją metod:
+
+Node find(Object data) - metoda przeszukuje listę i zwraca obiekt Node
+addFirst(Object element) - dodaje na początku
+addLast(Object element) - dodaje na końcu struktury
+delete(Object element) - usuwa element
+
+### W klasie MyLinkedList zaimplementuj metody
+void delete(Object element) - usuwa element
+Node find(Object data) - metoda przeszukuje listę i zwraca obiekt Node
+
+

@@ -1,0 +1,8 @@
+Klasę MyArrayList można rozwijać i dostosować do przechowywania obiektów (typy generyczne)
+
+W tym celu najlepiej wzorować się na implementacji klasy ArrayList.java z pakietu jav-y
+
+public class MyArrayList<T> implement List<T>{
+    ...reszta implementacji
+
+}
