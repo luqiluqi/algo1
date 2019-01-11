@@ -2,7 +2,7 @@ package pl.sda.structure.array_list;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class MyArrayListTest {
 
@@ -10,7 +10,6 @@ public class MyArrayListTest {
     @Test
     public void get() {
         MyArrayList arrayList = new MyArrayList();
-
         int newElement = 10;
         arrayList.add(newElement);
 
@@ -28,7 +27,6 @@ public class MyArrayListTest {
         int byIndex = arrayList.get(0);
         assertEquals(newElement, byIndex);
     }
-
 
     @Test
     public void remove() {

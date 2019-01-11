@@ -10,7 +10,7 @@ public class MySingleLinedList {
      */
     public boolean isEmpty() {
         //TODO - Podpowiedz : skoro zawsze wiemy że head będzie ustawiony za pierwszym razem :)
-        throw new RuntimeException("TODO");
+        return head == null;
     }
 
     /**
@@ -18,41 +18,61 @@ public class MySingleLinedList {
      */
     public int size() {
         //TODO - chyba już gdzieś to mówiliśmy :)
-        throw new RuntimeException("TODO");
+        int count = 0;
+        Node holder = head;
+        while (holder != null) {
+            ++count;
+            holder = holder.next;
+        }
+        return count;
     }
 
     /**
      * Dodaj element na podanym indeksie
-     *
      */
     public boolean add(int index, Object element) {
         Node newNode = new Node(element);
 
         //Pierwszy element
         if (head == null && index == 0) {
-            //TODO uzupełnij i zwróc return true;
-            throw new RuntimeException("TODO");
+            head = newNode;
+            return true;
+        }
+        if(index == 0){
+            newNode.next = head;
+            head = newNode;
+            return true;
         }
 
-        //Pobierz element index -1 =>  Node byIndex = get(index - 1);
-        // A następnie ustaw element byIndex.next = newNode i zwróć return true;
-        throw new RuntimeException("TODO");
+
+        int size = size();
+        Node prev = get(index - 1);
+        Node next = get(index);
+        prev.next = newNode;
+        if( index < size){
+            newNode.next = next;
+        }
+        return true;
     }
 
     /**
      * Pobranie i-tego elementu
-     *
+     * <p>
      * Zastanów się - zapisujesz kopie "head" a następnie w pętli for iterujesz ,
      * przesuwając kopia = kopia.next
-     *
      */
     public Node get(int index) {
-        //TODO
-        throw new RuntimeException("TODO");
+        Node holder = head;
+
+        for (int i = 0; i < index; i++) {
+            holder = holder.next;
+        }
+
+        return holder;
     }
 
 
-    private static class Node {
+    public static class Node {
 
         private Object data;
         private Node next;
@@ -60,6 +80,11 @@ public class MySingleLinedList {
         public Node(Object data) {
             this.data = data;
         }
+
+        public Object getData() {
+            return data;
+        }
+
     }
 
 

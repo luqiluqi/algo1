@@ -21,8 +21,7 @@ public class MyArrayList {
      * TODO Pobierz i-ty element z tablicy
      */
     public int get(int index) {
-        //TODO
-        throw new RuntimeException("TODO");
+       return array[index];
     }
 
     /*
@@ -36,16 +35,29 @@ public class MyArrayList {
      *
      */
     public boolean add(int element) {
-        //TODO
-        throw new RuntimeException("TODO");
+        if (size > array.length) {
+            int[] temp = new int[size * 2];
+            System.arraycopy(array, 0, temp, 0, array.length);
+            array = temp;
+        }
+        array[size] = element;
+        size++;
+        return true;
     }
 
     /**
      * TODO usuń element o podanym indeksie
      */
     public int remove(int index) {
-        //TODO
-        throw new RuntimeException("TODO");
+        // Pobrać element do usunięcia
+        int toRemove = get(index);
+
+        for(int i = index; i <array.length - 1;i++){
+            array[i] = array[i+1];
+        }
+        size --;
+
+        return toRemove;
     }
 
 

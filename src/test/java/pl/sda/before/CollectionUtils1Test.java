@@ -1,4 +1,4 @@
-package pl.sda.algorithm.task1;
+package pl.sda.before;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -62,7 +62,7 @@ public class CollectionUtils1Test {
         int[] tablica = {17, 64, 13, 48};
 
         //when
-        int smallestPosition = CollectionUtilsSolutions.getIndexOfNextMinElement(tablica, 0);
+        int smallestPosition = CollectionUtils.getIndexOfNextMinElement(tablica, 0);
 
         //then
         assertEquals(2, smallestPosition);

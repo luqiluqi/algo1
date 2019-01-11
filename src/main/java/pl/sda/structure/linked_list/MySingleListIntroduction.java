@@ -46,7 +46,7 @@ public class MySingleListIntroduction {
 
         //Gdy chcemy zliczyć elementy(Sprawdz co się stanie gdy zamiast używać nowej kopii,
         // będziemy używać zmiennej nazwie holder) :
-        Node<String> new_holder = lista.head;
+        Node<String> new_holder = holder;
         int count = 0;
         while (new_holder != null) {
             ++count;

@@ -9,41 +9,51 @@ public class MyLinkedDoubleList<T> {
 
     //Pobierz pierwszy element listy
     public Node<T> getFirst() {
-        //TODO
-        throw new RuntimeException("TODO");
+        Node<T> copy = new Node<>(head.data);
+        return copy;
     }
 
     //Pobierz ostatni element listy
     public Node<T> getLast() {
-        //TODO
-        throw new RuntimeException("TODO");
+        Node<T> copy = new Node<>(last.data);
+        return copy;
     }
 
     //Czy lista jest pusta ( nie zawiera elementów)
     public boolean isEmpty() {
-        //TODO
-        throw new RuntimeException("TODO");
+        return head == null;
     }
 
     //Pobierz rozmiar listy
     public int size() {
-        //TODO
-        throw new RuntimeException("TODO");
+        int count = 0;
+        Node<T> holder = head;
+
+        while (holder != null) {
+            ++count;
+            holder = holder.next;
+        }
+        return count;
     }
 
     //Dodaj na początku listy
     public boolean addFirst(T data) {
         //Dodajemy pierszy element
         if (checkIfFirstElement(data)) return true;
+
+
         Node<T> newNode = new Node<>(data);
+
         //Skoro na początku to na co ma wskazywać
         //          newNode.next?
         //          head.prev?
         //
         // Niezapomnij zaaktualizować pola head!
         //        i zwrócić return true;
-        //TODO
-        throw new RuntimeException("TODO");
+        newNode.next = head;
+        head.prev = newNode;
+        head = newNode;
+        return true;
 
     }
 
@@ -59,14 +69,17 @@ public class MyLinkedDoubleList<T> {
          * Niezapomnij zaaktualizować pola last!
          * i zwrócić return true;
          */
-        //TODO
-        throw new RuntimeException("TODO");
+        newNode.prev = last;
+        last.next = newNode;
+        last = newNode;
+
+        return true;
+
     }
 
     /**
-     *
-     *        Chcemy dodać newNode pomiędzy:
-     *          |prevNode| <--> |nextNode|
+     * Chcemy dodać newNode pomiędzy:
+     * |prevNode| <--> |nextNode|
      */
     public boolean add(int index, T data) {
         if (checkIfFirstElement(data)) return true;
@@ -104,17 +117,18 @@ public class MyLinkedDoubleList<T> {
     private boolean checkIfFirstElement(T data) {
         //Czy dodajemy pierwszy element
         if (head == null) {
-            //TODO
-            throw new RuntimeException("TODO");
+            Node<T> newNode = new Node<>(data);
+            head = newNode;
+            last = newNode;
+            return true;
         }
         return false;
     }
 
     /**
      * Pobierz i usuń pierwszy element tej listy.
-     *
+     * <p>
      * Tutaj trzeba będzie przepiąć "head" na element następny head = head.next (przyda się operowanie na kopii )
-     *
      */
     public T poll() {
         if (head == null) {
@@ -127,8 +141,8 @@ public class MyLinkedDoubleList<T> {
 
     public static class Node<T> {
 
-        private Node<T> prev;
-        private Node<T> next;
+        Node<T> prev;
+        Node<T> next;
         private T data;
 
         public Node(T data) {
