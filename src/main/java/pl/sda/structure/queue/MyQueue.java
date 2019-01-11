@@ -3,45 +3,25 @@ package pl.sda.structure.queue;
 /**
  * Kolejka to struktura FIFO(FIRST IN , FIRST OUT)
  * <p>
- * TODO zaimplementuj strukture kolejki (jednokierunkowej)
- * <p>
- * Podpowiedz:
- * <p>
- *
- * Zastanów się, czy przypadkie część metod z klasy MyLinkedDoubleList.java nie będzie przydatna:)
- *
- * Na pewno potrzebujesz przechowywać element:
- *
- * private Node<T> head - referencje do elementu pierwszego;
- *
  */
-public class MyQueue<T> {
+public class MyQueue {
 
-    /**
-     * Dodaj element jako ostatni
-     */
-    public void enqueue(T item) {
-        //TODO
-        throw new RuntimeException("TODO");
+    private class Node {
+        private int data;
+        private Node next;
+
+        private Node(int data) {
+            this.data = data;
+        }
     }
 
-    /**
-     * Pobierz i usuń pierwszy element z kolejki
-     */
-    public T dequeue() {
-        //TODO
-        throw new RuntimeException("TODO");
+
+    public void add(int data) {
     }
 
-    /**
-     *
-     * @return liczbę elementów kolejki
-     */
-    public int size() {
-        //TODO
-        throw new RuntimeException("TODO");
+    public int remove() {
+        return -1;
     }
-
 
 
 }

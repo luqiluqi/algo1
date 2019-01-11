@@ -1,35 +1,47 @@
 package pl.sda.structure.stack;
 
+import java.util.EmptyStackException;
+
 /**
  * Stos to struktura LIFO(LAST IN , FIRST OUT)
  * <p>
- * Zaimplementuj stos liczb całkowitych używając tablicy int[] elements
  */
-public class MyStack {
+public class MyStack<T> {
 
+    private class Node {
+        private T data;
+        private Node next;
+        private Node (T data) {
+            this.data = data;
+        }
+    }
+
+    private Node head;
+    private int size;
 
     /**
-     * @return ilośc elementów na stosie
+     * Metoda odkłada na stos
+     * @param data
      */
+    public void push(T data) {
+        //TODO zaimplementuj metod , wzrorując się na
+    }
+
+    /**
+     * Metoda pobiera ze stosu i usuwa
+     * @return
+     */
+    public T pop() {
+        //TODO
+        return null;
+    }
+
+    public void printStack(){
+        //TODO wypisz wszystkie elemnety stosu (Node.data)
+    }
+
     public int size() {
-        //TODO
-        throw new RuntimeException("TODO");
-    }
-
-    /**
-     * Dodaj element na szczyt
-     */
-    public void push(int data) {
-        //TODO
-        throw new RuntimeException("TODO");
-    }
-
-    /**
-     * Pobierz element ze szczytu i go usuń
-     */
-    public int pop() {
-        //TODO
-        throw new RuntimeException("TODO");
+        return size;
     }
 
 }
