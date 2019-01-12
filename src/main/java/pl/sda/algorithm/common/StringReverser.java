@@ -28,7 +28,18 @@ public class StringReverser {
      *  - pętla for może mieć postać : for (left = 0; left < right; left++, right--)
      */
     public String reverse2(String text) {
-        return text;
+
+        char[] chars = text.toCharArray();
+        int left = 0;
+        int right = chars.length - 1;
+
+        for(left = 0; left < right; left++){
+            char temp = chars[right];
+            chars[right] = chars[left];
+            chars[left] = temp;
+            right--;
+        }
+        return String.valueOf(chars);
     }
 
 
