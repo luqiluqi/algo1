@@ -7,7 +7,7 @@ public class TableTask1 {
         int sum = 0;
 
 
-        for (int i = 0; i < array.length; i+=2) {
+        for (int i = 1; i < array.length; i += 2) {
             array[i] = array[i] + array[i - 1];
 //            if (i % 2 == 1) {
 //                array[i] = array[i] + array[i - 1];
@@ -16,11 +16,10 @@ public class TableTask1 {
 
         for (int i = 0; i < array.length; i++) {
 
-            if(array[i] % 2 == 0){
-                array[i]= array[i] / 2;
+            if (array[i] % 2 == 0) {
+                array[i] = array[i] / 2;
             }
             sum = array[i] + sum;
-
         }
 
         assert sum == 55;
