@@ -41,7 +41,15 @@ public class MDMyQueue {
     }
 
     public int remove() {
-        return -1;
+        int holder = head.data;
+
+        head = head.next;
+
+//        if(head == null){
+//            tail = null;
+//        }
+
+        return holder;
     }
 
 
