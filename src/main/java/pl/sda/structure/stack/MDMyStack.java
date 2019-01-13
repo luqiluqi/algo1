@@ -42,7 +42,12 @@ public class MDMyStack<T> {
     }
 
     public void printStack(){
-        //TODO wypisz wszystkie elemnety stosu (Node.data)
+        Node temp = head;
+
+        while(temp !=null){
+            System.out.println(temp.data);
+            temp = temp.next;
+        }
     }
 
     public int size() {
