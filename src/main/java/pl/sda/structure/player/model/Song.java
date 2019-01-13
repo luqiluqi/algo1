@@ -67,4 +67,15 @@ public class Song {
     public int hashCode() {
         return Objects.hash(id, title, duration, artist, isPlayed);
     }
+
+    @Override
+    public String toString() {
+        return "Piosenka{" +
+                "id=" + id +
+                ", tytuł='" + title + '\'' +
+                ", czas trwania='" + duration + '\'' +
+                ", wykonawca='" + artist + '\'' +
+                ", odtwarzana=" + isPlayed +
+                '}';
+    }
 }

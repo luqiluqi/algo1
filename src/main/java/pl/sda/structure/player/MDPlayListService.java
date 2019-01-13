@@ -11,6 +11,8 @@ import java.util.Optional;
 
 public class MDPlayListService {
 
+    private static long nextId;
+
     //PlayListy użytkownika
     private final List<Playlist> userPlayList;
 
@@ -19,6 +21,9 @@ public class MDPlayListService {
     }
 
     public void createPlayList(Playlist playlist, List<Song> songs) {
+        for(Song song : songs){
+            song.setId(nextId++);
+        }
         playlist.setSongs(songs);
         userPlayList.add(playlist);
     }
@@ -45,6 +50,7 @@ public class MDPlayListService {
     }
 
     public void addSongToPlayList(Song song, String playListName) {
+        song.setId(nextId++);
         Playlist playList = getPlayList(playListName);
         playList.getSongs().add(song);
     }
