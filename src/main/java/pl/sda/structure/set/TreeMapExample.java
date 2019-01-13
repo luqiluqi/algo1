@@ -23,7 +23,7 @@ public class TreeMapExample {
 
         Set<Money> moneySet = new TreeSet<>();
 
-
+        moneySet.add(null);
         moneySet.add(new Money(BigDecimal.ONE));
         moneySet.add(new Money(BigDecimal.TEN));
 
