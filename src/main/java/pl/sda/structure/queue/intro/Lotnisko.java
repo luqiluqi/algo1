@@ -14,9 +14,19 @@ public class Lotnisko {
 
         PriorityQueue<User> kolejka = new PriorityQueue<>(new KolejkaKomparator());
 
+        kolejka.add(new User("Brajan", true));
         kolejka.add(new User("Wojciech", false));
         kolejka.add(new User("Monika", true));
-        kolejka.add(new User("Brajan", true));
+
+
+        User user = kolejka.poll();
+
+        while (user != null){
+            System.out.println(user);
+
+            user = kolejka.poll();
+        }
+
 
 
     }
