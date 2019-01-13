@@ -3,7 +3,7 @@ package pl.sda.structure.set;
 import java.util.HashSet;
 import java.util.Set;
 
-public class SetExample {
+public class HashSetExample {
 
     public static void main(String args[]){
         Set<String> zbior = new HashSet<>();
