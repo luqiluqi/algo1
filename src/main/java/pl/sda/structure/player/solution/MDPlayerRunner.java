@@ -18,24 +18,6 @@ public class MDPlayerRunner {
         boolean demo = false;
 
 
-        Playlist tempPlayList = new Playlist();
-        tempPlayList.setPlayListName("rock");
-
-        Song s1 = new Song();
-        s1.setTitle("Nieznajomy");
-        s1.setDuration("4:41");
-        s1.setArtist("Dawid Podsiadło");
-        Song s2 = new Song();
-        s2.setTitle("Nie ma fal");
-        s2.setDuration("1:41");
-        s2.setArtist("Dawid Podsiadło");
-        Song s3 = new Song();
-        s3.setTitle("Przez twe oczy");
-        s3.setDuration("14:51");
-        s3.setArtist("Akcent");
-        service.createPlayList(tempPlayList, Arrays.asList(s1,s2,s3));
-
-
         StringBuilder menuBuilder = new StringBuilder();
         menuBuilder.append("Menu:\n")
                 .append("q - wyjście \n")
