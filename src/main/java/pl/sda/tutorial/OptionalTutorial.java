@@ -1,4 +1,4 @@
-package pl.sda.structure.player.tutorial;
+package pl.sda.tutorial;
 
 import java.util.Optional;
 

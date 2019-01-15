@@ -15,7 +15,6 @@ public class MDPlayerRunner {
 
         final Scanner scanner = new Scanner(System.in);
         boolean exit = false;
-        boolean demo = false;
 
 
         StringBuilder menuBuilder = new StringBuilder();

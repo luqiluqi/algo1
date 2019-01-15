@@ -1,9 +1,9 @@
-package pl.sda.structure.player.tutorial;
+package pl.sda.tutorial;
 
 import java.io.InputStream;
 import java.util.Scanner;
 
-public class FileHandling {
+public class FileHandlingTutorial {
 
 
     public static void main(String args[]) {

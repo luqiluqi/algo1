@@ -22,16 +22,6 @@ public class NotebookRunner {
     }
     public void run() {
 
-        //podpowiedz: Set mozna przerobic na stream dokladnie tak samo jak list, czyli notebooks.stream()
-        //podpowiedz: jesli niewygodnie uzywa Ci sie streamow to nic zlego, uzyj zwyczajnego fora i np. ifa w srodku - rezultat ten sam :)
-        //podpowiedz: tak sie uzywa Year:
-        //tworze dwa obiekty typu Year
-        final Year year2000 = Year.of(2000);
-        final Year year1990 = Year.of(1990);
-        System.out.println(year2000.isAfter(year1990)); // prawda, rok 2000 jest po roku 1990
-        System.out.println(year2000.isBefore(year1990)); //falsz, rok 1990 jest przed rokiem 2000
-        //to byl tylko przyklad jak tego uzywac, mozesz usunac ten kod :)
-
         //Tutaj dodaj kod swojej aplikacji
 
 
