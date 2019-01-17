@@ -11,6 +11,8 @@ public class Tyre {
     // Typ opon : ZIMOWE/LETNIE/WIELOSEZONOWE
     private String tyreType;
 
+    //Numer seryjny opon
+    private String serialNumber;
 
 
 }

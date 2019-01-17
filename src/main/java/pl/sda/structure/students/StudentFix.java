@@ -2,10 +2,10 @@ package pl.sda.structure.students;
 
 public class StudentFix {
 
-    // średnia z przedmiotów
+    // średnia z przedmiotów np. 4.12
     private int average;
 
-    // wynik osiągniety z egazaminu końcowego - liczba punktów
+    // wynik osiągniety z egazaminu końcowego - liczba całkowita
     private int score;
 
     //Imię ucznia
