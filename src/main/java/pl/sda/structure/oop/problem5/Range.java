@@ -1,4 +1,4 @@
-package pl.sda.structure.oop.problem6;
+package pl.sda.structure.oop.problem5;
 
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
