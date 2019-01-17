@@ -1,4 +1,4 @@
-package pl.sda.structure.oop;
+package pl.sda.structure.oop.problem4;
 
 public class CardProcessor {
 
