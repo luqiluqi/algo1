@@ -78,11 +78,68 @@ public class StudentFilterRunner {
     }
 
     public static void main(String args[]) {
+        List<Student> studenciNaPiatymRoku = filterOnlyWith5YearOfStudy(students);
 
+        List<Student> studenciBezPromocjiNaRokNastepny = filerAllStudentsWhereAverageLessThan2(students);
 
+        List<Student> studenciZNagrodaMinistra = filterAllStudentsWhereAverageGreaterThan5(students);
 
+        List<Student> liczbaInzynierow = countEngineers(students);
 
+        List<Student> sredniaPomiedzy4a5 = filterStudentWithAvgBetween4And5(students);
+
+        List<Student> uczniowieUrodzeniZaKomuny = filterAllWhereBirdthDayBefore89(students);
     }
 
+
+    /**
+     * Pobierz studentów na piątym roku
+     */
+    private static List<Student> filterOnlyWith5YearOfStudy(List<Student> students) {
+        //TODO
+        return null;
+    }
+
+    /**
+     * Zwraca studentów których średnia jest mniejsza od 2.0
+     */
+    private static List<Student> filerAllStudentsWhereAverageLessThan2(List<Student> students) {
+        return null;
+    }
+
+    /**
+     * zwraca tylko inżynierów na uczelni
+     */
+    private static List<Student> countEngineers(List<Student> students) {
+        //TODO
+        return null;
+    }
+
+
+    /**
+     * Pobierz studentów którrzy maja średnią ocen >5
+     */
+    private static List<Student> filterAllStudentsWhereAverageGreaterThan5(List<Student> students) {
+        //TODO
+        return null;
+    }
+
+
+    /**
+     * Zwraca studentów ze średnią pomiędzy 4.0 a 5.0
+     */
+    private static List<Student> filterStudentWithAvgBetween4And5(List<Student> students) {
+        //TODO
+        return null;
+    }
+
+
+    /**
+     * Zwraca studentów urodzonych przed rokiem 89 tj. LocalDate.of(1989, 12, 31))
+     */
+    private static List<Student> filterAllWhereBirdthDayBefore89(List<Student> students) {
+        //TODO
+        return null;
+    }
 
 }
