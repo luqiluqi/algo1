@@ -1,4 +1,4 @@
-package pl.sda.before;
+package pl.sda.tutorial;
 
 import java.util.*;
 

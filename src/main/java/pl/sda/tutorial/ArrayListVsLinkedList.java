@@ -1,4 +1,4 @@
-package pl.sda.structure;
+package pl.sda.tutorial;
 
 import java.util.ArrayList;
 import java.util.Iterator;

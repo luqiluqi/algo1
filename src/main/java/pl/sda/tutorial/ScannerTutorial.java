@@ -1,8 +1,8 @@
-package pl.sda.structure;
+package pl.sda.tutorial;
 
 import java.util.Scanner;
 
-public class ScannerIntro {
+public class ScannerTutorial {
 
     public static void main(String args[]) {
 
