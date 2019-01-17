@@ -4,7 +4,8 @@ import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.math.BigDecimal;
 
-public class Range {
+public class RangeUtil {
+
 
     /**
      * Zaprojektuj struktre dla poniższego problemu:
