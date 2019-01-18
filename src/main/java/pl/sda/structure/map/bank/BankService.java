@@ -1,8 +1,8 @@
-package pl.sda.structure.map;
+package pl.sda.structure.map.bank;
 
-import pl.sda.structure.map.model.AccountType;
-import pl.sda.structure.map.model.BankAccount;
-import pl.sda.structure.map.model.CardType;
+import pl.sda.structure.map.bank.model.AccountType;
+import pl.sda.structure.map.bank.model.BankAccount;
+import pl.sda.structure.map.bank.model.CardType;
 
 import java.util.ArrayList;
 import java.util.HashMap;

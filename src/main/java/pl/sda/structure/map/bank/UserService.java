@@ -1,6 +1,6 @@
-package pl.sda.structure.map;
+package pl.sda.structure.map.bank;
 
-import pl.sda.structure.map.model.BankUser;
+import pl.sda.structure.map.bank.model.BankUser;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
-package pl.sda.structure.map.runner;
+package pl.sda.structure.map.bank.runner;
 
-import pl.sda.structure.map.BankService;
-import pl.sda.structure.map.UserService;
+import pl.sda.structure.map.bank.BankService;
+import pl.sda.structure.map.bank.UserService;
 
 import java.util.Scanner;
 

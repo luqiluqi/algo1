@@ -1,4 +1,4 @@
-package pl.sda.structure.map.model;
+package pl.sda.structure.map.bank.model;
 
 public enum CardType {
 

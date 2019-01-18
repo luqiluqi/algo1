@@ -1,4 +1,4 @@
-package pl.sda.structure.map.runner;
+package pl.sda.structure.map.bank.runner;
 
 public class Main {
 
