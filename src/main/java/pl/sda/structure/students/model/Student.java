@@ -31,4 +31,52 @@ public class Student {
         this.studyType = studyType;
         this.birdthDay = birdthDay;
     }
+
+    public BigDecimal getAverage() {
+        return average;
+    }
+
+    public void setAverage(BigDecimal average) {
+        this.average = average;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public YearOfStudy getYearOfStudy() {
+        return yearOfStudy;
+    }
+
+    public void setYearOfStudy(YearOfStudy yearOfStudy) {
+        this.yearOfStudy = yearOfStudy;
+    }
+
+    public StudyType getStudyType() {
+        return studyType;
+    }
+
+    public void setStudyType(StudyType studyType) {
+        this.studyType = studyType;
+    }
+
+    public LocalDate getBirdthDay() {
+        return birdthDay;
+    }
+
+    public void setBirdthDay(LocalDate birdthDay) {
+        this.birdthDay = birdthDay;
+    }
 }
