@@ -8,7 +8,7 @@ public class UserService {
 
     private List<BankUser> bankUsers;
 
-    public void createUser(BankUser bankUser){
+    public void createUser(Long id, String userLogin, String name, String surname){
         //TODO
     }
 
