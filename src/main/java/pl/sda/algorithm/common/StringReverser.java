@@ -1,6 +1,10 @@
 package pl.sda.algorithm.common;
 
 
+import javafx.scene.control.Tab;
+
+import java.util.ArrayList;
+
 /**
  *
  * TODO
@@ -16,8 +20,19 @@ public class StringReverser {
 
     //TODO - użyj klasy StringBuilder
     public String reverse1(String text) {
-        return null;
+        char [] tab = text.toCharArray();
+        int j = tab.length - 1;
+        char przechowalnia;
+        for (int i = 0; i < j; i++){
+            przechowalnia = tab[i];
+            tab [i] = tab [j];
+            tab [j] = przechowalnia;
+            j--;
+        }
+        String revers = tab.toString();
+        return revers;
     }
+
 
 
     /*

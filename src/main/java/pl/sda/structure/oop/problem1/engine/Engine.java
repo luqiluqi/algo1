@@ -5,8 +5,7 @@ import java.math.BigDecimal;
 public class Engine {
 
     // Odrzutowy/ Spalinowy / Elektryczny/ Hybrydowy
-    private String engineType;
-
+    private EngineType engineType;
     // MOC
     private int power;
 

@@ -8,12 +8,25 @@ public class PassingParameters {
     /**
      * Jak zastąpić wywołanie z wieloma parametrami ?
      */
-    public String execute(int sum, String name, String title,
-                          BigDecimal amount, BigDecimal credit,
-                          String surname, String address){
 
-        // ..jakieś operacje...
-        return "";
+
+    public class Parameter{
+        int sum;
+        String name;
+        String title;
+        BigDecimal amount;
+        BigDecimal credit;
+        String surname;
+        String address;
+        public Parameter sum(int sum){
+            this.sum = sum;
+            return this;
+        }
+        public Parameter title(String title){
+            this.title = title;
+            return this;
+        }
+
     }
 
 }

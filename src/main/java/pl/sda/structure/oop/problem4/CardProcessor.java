@@ -1,10 +1,18 @@
 package pl.sda.structure.oop.problem4;
 
+import java.math.BigDecimal;
+import java.util.Arrays;
+
 public class CardProcessor {
+    private String nameCard;
+    private int cardLength;
+    private String cardPrefix;
 
 
 
-    public CardProcessor() {
+    public CardProcessor(String carcNumber) {
+
+
     }
 
     /**
